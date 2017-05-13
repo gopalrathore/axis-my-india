@@ -1,0 +1,258 @@
+/* CSS Reset code */
+
+@charset "utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+
+/* Force scrollbar */
+
+html {
+  overflow-y: scroll;
+}
+
+
+/* Align radios and text inputs with their label */
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+
+/* Hand cursor on clickable input elements */
+
+label, input[type="button"], input[type="submit"], button {
+  cursor: pointer;
+}
+
+strong {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+sub, sup {
+  font-size: 55%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.7em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+
+/* 1.2. Clear Fix
+========================================================================== */
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+
+/*My styles*/
+
+body {
+  background: #ccc;
+}
+
+.container {
+  width: 100%;
+  background: #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 8px 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  background: #fff;
+  text-align: center;
+}
+
+.banner-img {
+  width: 61.85%;
+  margin: 0 auto;
+}
+
+.banner-img img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 57.10%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 19px 8px 8px 8px;
+}
+
+.vote {
+  padding-top: 12%;
+  text-align: center;
+}
+
+.vote-head {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #000;
+}
+
+.vote-head h2 {
+  color: #990099;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 3px;
+  width: 100%;
+}
+
+.vote-head p {
+  margin-top: 12px;
+  color: #990099;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+marquee {
+  margin-top: 35px;
+  font-size: 12px;
+  color: red;
+  font-weight: bold;
+}
+
+.form-field>h2 {
+  margin: 15px 0 35px 0;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2C3E50;
+}
+
+form {
+  padding-bottom: 60px;
+}
+
+textarea, select, input {
+  padding: 5px;
+  margin-right: 9px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+.row {
+  width: 79.22%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row:last-of-type {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+select.fifty {
+  width: 49.4%;
+}
+
+.fifty {
+  width: 47%;
+}
+
+.thirtythree {
+  width: 32.4%;
+}
+
+.twenty-five {
+  width: 22%;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 36px;
+  border: none;
+  border-radius: 1px;
+  font-size: 13px;
+  background: #990099;
+  color: #fff;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #990099;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 500px) {
+  .vote {
+    padding-top: 21%;
+  }
+  .wrapper {
+    width: 100%;
+    padding: 19px 0 0 0;
+  }
+  .banner-img {
+    width: 100%;
+  }
+  select {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  textarea, input {
+    width: 96% !important;
+    margin-bottom: 10px;
+  }
+  textarea, select, input {
+    margin-right: 0;
+  }
+  .row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}

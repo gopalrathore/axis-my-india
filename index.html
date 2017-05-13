@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AXIS MY INDIA - CONNECTING INDIA TO BUILD INDIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="banner-img">
+        <img src="images\formtop4.jpg" alt="Banner-Top">
+      </div>
+    </header>
+
+    <main>
+      <div class="vote">
+        <div class="wrapper">
+          <div class="vote-head">
+            <h2>VOTE NOW TO PARTICIPATE!</h2>
+            <p>(Note: Only fully completed Forms with correct Personal details will qualify for the Lucky Draw.)</p>
+            <marquee scrolldelay="150">Participation in Axis My India Survey and for Lucky Draw is entirely free. There are no financial transactions whatsoever either in cash/cheque or other online and other mode of payments required from the respondents. Axis My India will not
+              be responsible for any fraudulent transactions committed by any individual or entity towards our Survey or Lucky draw.</marquee>
+          </div>
+
+          <div class="form-field">
+            <h2>ABOUT YOURSELF</h2>
+            <form action="#FIXME">
+              <div class="row">
+                <input class="fifty" type="text" name="name" placeholder="Name" required>
+                <input class="fifty" type="email" name="email" placeholder="email" required>
+              </div>
+              <div class="row">
+                <input class="fifty" type="text" name="phoneNumber" onkeyup="checkNumber()" placeholder="Contact Number (Land Line Number)" maxlength="12">
+                <input class="fifty" type="text" name="mobileNumber" onkeypress="checkNumber(value)" placeholder="Mobile Number" maxlength="10">
+              </div>
+
+              <div class="row">
+                <select class="fifty" name="gender">
+                    <option value="gender" >Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Femail</option>
+                  </select>
+                <select class="fifty" name="age">
+                    <option value="age">Select Age</option>
+                    <option value="12-17">12-17</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-50">36-50</option>
+                    <option value="51-60">51-60</option>
+                    <option value="61 & Above">61 & Above</option>
+                  </select>
+              </div>
+              <div class="row">
+                <textarea name="residentAddress" rows="4" placeholder="Residence Addrss"></textarea>
+              </div>
+
+              <div class="row">
+                <input class="fifty" type="text" name="townVillage" placeholder="Town / Village">
+                <select class="fifty" name="geography">
+                    <option value="geography">Select Geography</option>
+                    <option value="urban">Urban</option>
+                    <option value="rural">Rural</option>
+                  </select>
+              </div>
+
+              <div class="row">
+                <select class="fifty" name="state">
+                    <option value="state">Select State</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Orissa">Orissa</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="West Bengal">West Bengal</option>
+                  </select>
+                <input class="twenty-five" type="text" name="district" placeholder="District">
+                <input class="twenty-five" type="text" name="pincode" onkeypress="checkNumber(value)" placeholder="Pincode">
+              </div>
+
+              <div class="row">
+                <input class="fifty" type="text" name="loksabha" placeholder="Lok Sabha">
+                <input class="fifty" type="text" name="vidhansabha" placeholder="Vidhan Sabha">
+              </div>
+
+              <div class="row">
+                <select class="thirtythree" name="income">
+                    <option value="income">Select Income</option>
+                    <option value="BPL/Below 5000">BPL/Below 5000</option>
+                    <option value="5-10000">5-10,000</option>
+                    <option value="11-20000">11-20,000</option>
+                    <option value="21-30000">21-30,000</option>
+                    <option value="31000 And Above">31000 And Above</option>
+                  </select>
+                <input type="text" name="familyMenber" placeholder="Number of Family Members" onkeypress="checkNumber(value)" style="width:30%">
+                <select class="thirtythree" name="occupation">
+                    <option value="occupation">Select Occupation</option>
+                    <option value="Business">Business </option>
+                    <option value="Carpenter">Carpenter </option>
+                    <option value="Doctor">Doctor </option>
+                    <option value="Electrician">Electrician </option>
+                    <option value="Farmer">Farmer </option>
+                    <option value="Government Service">Government Service </option>
+                    <option value="Guide">Guide </option>
+                    <option value="HouseWife">HouseWife </option>
+                    <option value="Lawyer">Lawyer </option>
+                    <option value="Pandit">Pandit </option>
+                    <option value="Plumber">Plumber </option>
+                    <option value="Private Service">Private Service </option>
+                    <option value="Professional">Professional </option>
+                    <option value="Small Shop">Small Shop </option>
+                    <option value="Student">Student </option>
+                    <option value="Technician">Technician </option>
+                    <option value="Worker">Worker </option>
+                  </select>
+              </div>
+
+              <div class="row">
+                <select class="thirtythree" name="school">
+                    <option value="school">Select School</option>
+                    <option value="Government">Government </option>
+                    <option value="Private">Private </option>
+                    <option value="Tuition">Tuition </option>
+                    <option value="Not Studying">Not Studying </option>
+                  </select>
+                <select class="thirtythree" name="internet">
+                    <option value="internet">Select Internet</option>
+                    <option value="Home">Home </option>
+                    <option value="Office">Office </option>
+                    <option value="Panchayat">Panchayat </option>
+                    <option value="Cyber Cafe">Cyber Cafe </option>
+                    <option value="Mobile">Mobile </option>
+                    <option value="Do Not Use">Do Not Use </option>
+                  </select>
+                <select class="thirtythree" name="recharge">
+                    <option value="recharge">Select Monthly Recharge</option>
+                    <option value="0-100">0-100</option>
+                    <option value="101-200">101-200</option>
+                    <option value="201-500">201-500</option>
+                    <option value="Above 500">Above 500</option>
+                  </select>
+              </div>
+
+              <div class="row">
+                <select class="thirtythree" name="whatsapp">
+                    <option value="whatsapp">WhatsApp Usage</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+
+                <select class="thirtythree" name="laptop">
+                    <option value="laptop">Laptop / Computer Usage</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+
+                <select class="thirtythree" name="facebook">
+                    <option value="facebook">Facebook Usage</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+              </div>
+
+              <div class="row">
+                <select class="fifty" name="hospital">
+                    <option value="hospital">Select Hospital</option>
+                    <option value="1#Government">Government</option>
+							<option value="4#Local Doctors">Local Doctors</option>
+							<option value="2#Private">Private</option>
+							<option value="3#Self Medication">Self Medication</option>
+							<option value="others">Others</option>
+                  </select>
+                <input class="fifty" type="text" name="otherHospital" placeholder="Other" disabled>
+              </div>
+
+              <div class="row">
+                <select class="fifty" name="vehicle">
+                    <option value="vehicle">Select Vehicle</option>
+                    <option value="3#Car">Car</option>
+							<option value="2#Motor Bike">Motor Bike</option>
+							<option value="4#Public Transport">Public Transport</option>
+							<option value="others">Others</option>
+                  </select>
+                <input class="fifty" type="text" name="otherVehicle" placeholder="Other" disabled>
+              </div>
+
+              <input type="submit" value="Next">
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2017, AXIS MY INDIA Ltd. All rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="javascript\script.js" charset="utf-8"></script>
+</body>
+
+</html>
