@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
+  <script src="javascript\app.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -27,9 +29,9 @@
               be responsible for any fraudulent transactions committed by any individual or entity towards our Survey or Lucky draw.</marquee>
           </div>
 
-          <div class="form-field">
+          <div class="form-field" ng-app="myApp" ng-controller="ageController">
             <h2>ABOUT YOURSELF</h2>
-            <form action="#FIXME">
+            <form ng-submit="postIt()">
               <div class="row">
                 <input class="fifty" type="text" name="name" placeholder="Name" required>
                 <input class="fifty" type="email" name="email" placeholder="email" required>
@@ -195,7 +197,7 @@
               </div>
 
               <div class="row">
-                <select class="fifty" name="hospital">
+                <select class="fifty other" name="hospital">
                     <option value="hospital">Select Hospital</option>
                     <option value="1#Government">Government</option>
 							<option value="4#Local Doctors">Local Doctors</option>
@@ -207,7 +209,7 @@
               </div>
 
               <div class="row">
-                <select class="fifty" name="vehicle">
+                <select class="fifty other" name="vehicle">
                     <option value="vehicle">Select Vehicle</option>
                     <option value="3#Car">Car</option>
 							<option value="2#Motor Bike">Motor Bike</option>
@@ -217,7 +219,12 @@
                 <input class="fifty" type="text" name="otherVehicle" placeholder="Other" disabled>
               </div>
 
-              <input type="submit" value="Next">
+              <div class="row">
+                <input class="fifty" type="number" name="age" ng-model="age" placeholder="Age">
+
+              </div>
+
+              <input type="submit" name="submit" value="Next">
 
             </form>
           </div>

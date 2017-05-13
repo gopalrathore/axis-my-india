@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $('select').on('change', function() {
+  $('.other').on('change', function() {
     if (this.value == "others") {
       $(this).next('input').removeAttr('disabled');
       $(this).next('input').focus();
